@@ -1,0 +1,33 @@
+body {
+}
+
+.container {
+    min-width: 1000px;
+}
+
+#game-board {
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.tile {
+    width: 49px;
+    height: 49px;
+    align-items: center;
+    font-size: 24px;
+    image-rendering: pixelated;
+}
+
+
+ul {
+    box-sizing: border-box;
+    display: inline;
+    margin: 0%;
+}
+li {
+    display: inline-block;
+}

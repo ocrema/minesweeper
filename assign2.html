@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3/dist/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="assign2.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Mine Sweeper</h1>
+        <p>Click to reveal a tile. Right click to flag a mine. Reveal all empty tiles to win.</p>
+        <ul class="row justify-content-center">
+            <li class="card text-white bg-warning mb-3" style="max-width: 20rem; margin-right: 20px;">
+                <div class="card-body">
+                    <p class="card-text">Mines Remaining: <span id="minesRemaining"></span></p>
+                </div>
+            </li>
+            <li class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-body">
+                    <p class="card-text">Time: <span id="timer"></span></p>
+                </div>
+            </li>
+        </ul>
+        <div class="card text-white bg-danger mb-3" style="max-width: 800px; min-width: 800px; margin: auto" id="loseBanner" style="display: none;">
+            <div class="card-body">
+                <h1 class="card-text">You Lose!</h1>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-3" style="max-width: 800px; min-width: 800px; margin: auto" id="winBanner" style="display: none;">
+            <div class="card-body">
+                <h1 class="card-text">You Win!</h1>
+            </div>
+        </div>
+        <div id="game-board" class="row justify-content-center"></div>
+        <button id="restart" class="btn btn-success mt-3"><h1>Start</h1></button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assign2.js"></script>
+</body>
+
+</html>
